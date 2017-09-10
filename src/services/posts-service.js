@@ -26,7 +26,7 @@ export default class PostsService {
         if(post.id === postId){
           return post;
         }
-      });
+      })[0];
 
     }
 

@@ -1,6 +1,6 @@
 <template>
 
-  <section class="col-xs-12">
+  <div>
 
     <h2>Latest Posts</h2>
 
@@ -8,19 +8,19 @@
 
       <div v-if="index < maxPosts" class="post">
         <h4 class="post-header">{{post.title}}
-          <span class="post-time">{{ post.createdTimeFormatted }}</span>
+          <span class="post-time">[ {{ post.createdTimeFormatted }} ]</span>
         </h4>
 
-        <!--<details [innerHTML]="post.summary" class="post-summary"></details>-->
+        <details v-html="post.summary" class="post-summary"></details>
 
-        <router-link to="'/posts/' + post.id">Click for full details</router-link>
+        <router-link to="/posts/1">Click for full details</router-link>
 
         <hr/>
       </div>
 
     </div>
 
-  </section>
+  </div>
 
 </template>
 

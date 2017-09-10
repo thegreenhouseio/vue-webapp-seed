@@ -46,7 +46,7 @@ Recommended plugins to have are:
 - gitignore
 - Sass
 - ESlint
-- TypeScript
+- Vue
 - NodeJS
 
 [Webstorm]: https://www.jetbrains.com/webstorm/
@@ -79,8 +79,6 @@ Also know as 'dot' files, these are the build and build configuration files for 
 * _.eslintrc_ - linting rules for spec and build files
 * _package.json_ - NPM / Yarn dependency configuration file, for build related dependencies and defines all runnable scripts and commands
 * _jest.config.json_ - configuration for Jest
-* _tsconfig.json_ - TypeScript compiler configuration file
-* _tslint.json_ - configuration rules for [TSLint][]
 * _webpack.config.common.js_ - webpack config for managing shared webpack configurations
 * _webpack.config.develop.js_ - webpack config for local development
 * _webpack.config.prod.js_ - webpack config for production builds
@@ -123,7 +121,7 @@ http://localhost:4567/
 This is the production build task for the project.  It is used prior to deploying to an environment and build a 
 production version of the application.
 
-**Note: This task exports** `NODE_ENV=production`
+**Note: This task exports** `NODE_ENV=production` by the use of using webpack's `-p` flag
 
 ```
 $ yarn run build
@@ -133,7 +131,7 @@ $ yarn run build
 Jenkins runs three scripts together (_bin/build.sh_) that lints non TS files, runs unit tests, and builds the application
 ```bash
 $ yarn run clean
-$ yarn run test -- --coverage
+$ yarn run test
 $ yarn run build
 ```
 

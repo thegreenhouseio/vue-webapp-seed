@@ -2,9 +2,11 @@
 
   <header class="col-xs-12">
 
-    <h2 class="hidden-md-up header-text ">The Greenhouse</h2>
-    <div class="hidden-sm-down header-banner"></div>
-    <p class="io-text">.io</p>
+    <router-link to="/home">
+      <h2 class="hidden-md-up header-text ">The Greenhouse</h2>
+      <div class="hidden-sm-down header-banner"></div>
+      <p class="io-text">.io</p>
+    </router-link>
 
   </header>
 

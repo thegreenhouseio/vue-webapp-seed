@@ -7,10 +7,10 @@
 
     <p>Hello World!</p>
 
-    <!--<section>-->
+    <section>
       <!--<tgh-navigation></tgh-navigation>-->
-      <!--<ui-view/>-->
-    <!--</section>-->
+      <router-view></router-view>
+    </section>
 
     <section>
       <tgh-footer></tgh-footer>

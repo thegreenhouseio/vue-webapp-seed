@@ -1,9 +1,9 @@
 import Vue from 'vue';
 
-import Bootstrap from './components/Bootstrap.vue';
+import Bootstrap from './components/Bootstrap';
 
 new Vue({ // eslint-disable-line no-new
   el: '#app',
   components: { Bootstrap },
-  render: h => h(Bootstrap)
+  render: createElement => createElement(Bootstrap)
 });

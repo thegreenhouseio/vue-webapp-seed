@@ -1,20 +1,35 @@
 <template>
 
-  <section>
-    <div>
-      <p class="greeting">Hello {{ name }}!</p>
-    </div>
+  <div>
+    <section>
+      <tgh-header></tgh-header>
+    </section>
 
-  </section>
+    <p>Hello World!</p>
+
+    <!--<section>-->
+      <!--<tgh-navigation></tgh-navigation>-->
+      <!--<ui-view/>-->
+    <!--</section>-->
+
+    <section>
+      <tgh-footer></tgh-footer>
+    </section>
+  </div>
 
 </template>
 
 <script>
+  import Footer from './Footer';
+  import Header from './Header';
+
   export default {
     data: function() {
-      return {
-        name: 'Owen'
-      };
+      return {};
+    },
+    components: {
+      'tgh-header': Header,
+      'tgh-footer': Footer
     }
   };
 </script>

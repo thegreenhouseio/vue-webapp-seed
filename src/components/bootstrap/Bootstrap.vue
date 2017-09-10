@@ -5,10 +5,7 @@
       <tgh-header></tgh-header>
     </section>
 
-    <p>Hello World!</p>
-
     <section>
-      <!--<tgh-navigation></tgh-navigation>-->
       <router-view></router-view>
     </section>
 

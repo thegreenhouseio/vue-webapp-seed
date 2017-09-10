@@ -13,7 +13,7 @@
 
         <details v-html="post.summary" class="post-summary"></details>
 
-        <router-link to="/posts/1">Click for full details</router-link>
+        <router-link :to="{ path: `/posts/${post.id}`}">Click for full details</router-link>
 
         <hr/>
       </div>

@@ -16,7 +16,7 @@
             <p>Post Title: {{ post.title }}</p>
             <p>Post Summary:<p>
             <p v-html="post.summary"></p>
-            <p>Post Created Time: {{ post.createdTime * 1000 }}</p>
+            <p>Post Created Time: {{ post.createdTime }}</p>
           </div>
         </div>
 
@@ -36,7 +36,7 @@
   export default {
     data: function() {
       const postId = parseInt(this.$route.params.id, 10);
-      
+
       return {
         post: new PostsService().getPosts(postId)
       };

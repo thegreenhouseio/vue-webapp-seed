@@ -1,1 +1,2 @@
+import 'moment';
 import 'vue';

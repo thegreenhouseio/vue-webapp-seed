@@ -35,7 +35,8 @@ module.exports = {
         },
         preLoaders: {
           js: 'eslint-loader'
-        }
+        },
+        scss: 'vue-style-loader!css-loader!sass-loader'
       }
     }, {
       test: /\.html$/,

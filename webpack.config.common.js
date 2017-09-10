@@ -26,7 +26,6 @@ module.exports = {
 
   module: {
     rules: [{
-      // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
       test: /\.vue$/,
       loader: 'vue-loader',
       options: {

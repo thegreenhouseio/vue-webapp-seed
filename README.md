@@ -14,21 +14,19 @@ repo and edit the files as needed to match your project.
 ## Tooling
 The following tools are used in the application
 
-- [Vue][] - as the Front-End library
+- [Vue][] - as the Front-End library using [Single File Components][] and ES6
 - [Webpack][] - Module loader / bundler, primary build tool
 - [Node][]  - local development and build time JavaScript runtime
 - [Yarn][]  - package manager for build and application dependencies
-- [TypeScript][] - superset of JavaScript for writing application code
 - [Jest][] - unit testing library / runner, with [Enyzme][]
 
 [Node]: https://nodejs.org/
 [Yarn]: https://www.yarnpkg.com/
 [Vue]: https://vuejs.org/
-[TypeScript]: https://www.typescriptlang.org/
 [Webpack]: https://webpack.github.io/
 [Jest]: https://facebook.github.io/jest/
 [Enzyme]: https://github.com/airbnb/enzyme
-
+[Single File Components]: https://vuejs.org/v2/guide/single-file-components.html
 
 ## Links
 * Repository (Github)- TODO <your-link-here>

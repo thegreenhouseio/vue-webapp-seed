@@ -10,13 +10,6 @@ module.exports = webpackMerge(commonConfig, {
     watchOptions: {
       aggregateTimeout: 300,
       poll: 1000
-    },
-    proxy: {
-      '/api.github.com/*': {
-        target: 'http://api.github.com/',
-        secure: false,
-        changeOrigin: true
-      }
     }
   }
 

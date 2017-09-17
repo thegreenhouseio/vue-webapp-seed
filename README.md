@@ -59,7 +59,7 @@ Recommended plugins to have are:
 2. This project favors Yarn, so make sure you have the latest by updating it after installing Node by running 
 
 ```
-$ npm install -g yarn@0.21.3
+$ npm install -g yarn@^1.0.0
 ```
 
 3. Now install the build and application dependencies by running
@@ -103,9 +103,7 @@ This project uses Webpack as the build tool, exectuted via NPM scripts.  All ava
 section of _package.json_
 
 ### Development
-This will start up a Node (Express) server which watches for changes and 'redeploys' as needed.
-
-**Note: This task exports** `NODE_ENV=development`
+This will start up [webpack-dev-server](https://webpack.js.org/configuration/dev-server/), which watches for changes and 'redeploys' as needed.
 
 ```
 $ yarn run develop

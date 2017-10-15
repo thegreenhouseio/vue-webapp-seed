@@ -10,7 +10,7 @@
     "clean": "rimraf ./build && rimraf ./reports && mkdir ./reports && mkdir ./reports/test-results",
     "build": "eslint *.js && webpack --config ./webpack.config.prod.js --progress --profile --bail",
     "develop": "webpack-dev-server --open --config ./webpack.config.develop.js --inline --progress",
-    "serve": "npm run clean && npm run build && http-server ./build -o"
+    "serve": "npm run clean && npm run build && http-server ./build -o -a localhost -P http://your-domain.com/api"
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",

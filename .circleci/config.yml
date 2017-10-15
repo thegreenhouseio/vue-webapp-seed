@@ -1,13 +1,8 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
 jobs:
   build:
-    machine:
-      node:
-        version: 6.10.0
+    docker:
+      - image: thegreenhouse/nodejs-dev:0.1.0
 
     working_directory: ~/repo
 
@@ -22,9 +17,9 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: Install Yarn
-          command: npm install -g yarn@1.0.0
-
+          name: Install Dependencies
+          command: yarn install
+          
       - run:
-          name: Execute the Build
-          command: bin/build.sh
+          name: Run the Build
+          command: yarn run build

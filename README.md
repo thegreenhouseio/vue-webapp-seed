@@ -126,7 +126,7 @@ $ yarn run build
 ```
 
 ### Continuous Integration
-[Circle](https://circleci.com/gh/thegreenhouseio/) manages continuous integration in _.circleci/config.yml_.
+For thie project, [Circle](https://circleci.com/gh/thegreenhouseio/) manages continuous integration in _.circleci/config.yml_.
 
 ### Demo
 To serve a production build locally , like for a demo run:
